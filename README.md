@@ -10,5 +10,5 @@ A collection of interactive data visualization projects and professional busines
 * **Skills**: T-SQL, Data Modeling, DirectQuery, and DAX.
 
 ## 📧 Contact
-* **LinkedIn:** [Mohammed Aslam](https://www.linkedin.com/in/mohammed-aslam-a-363568298)
+* **LinkedIn:** [A.Mohammed Aslam](https://www.linkedin.com/in/mohammed-aslam-a-363568298)
 * **Email:** mohammedaslam87878@gmail.com

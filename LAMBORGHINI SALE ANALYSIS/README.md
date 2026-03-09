@@ -1,12 +1,17 @@
-Project Overview
-A comprehensive retail performance dashboard for the luxury automotive brand, tracking global sales distribution and vehicle specifications from 2020 to 2025.
+# Lamborghini Sale Analysis
+A comprehensive Power BI dashboard analyzing sales performance, regional distribution, and model-wise revenue for Lamborghini.
 
-Key Technical Skills
-Geographical Mapping: Integrated Map Visuals to track buyer locations across APAC, EMEA, and Americas.
+## 📊 Key Insights
+* **Sales Performance**: Tracked annual and quarterly sales growth across various global regions.
+* **Model Analysis**: Analyzed the popularity and revenue contribution of different Lamborghini models.
+* **Geographical Distribution**: Visualized sales density to identify key market leaders and emerging regions.
+* **Revenue Metrics**: Developed KPIs to monitor average transaction values and profit margins.
 
-Performance Benchmarking: Created scatter plots to analyze the correlation between Horsepower and Base Price across different models.
+## 🛠️ Technical Details
+* **Tool**: Power BI Desktop.
+* **Data Modeling**: Utilized DAX for calculated measures and complex data transformations.
+* **Visuals**: Features interactive maps, treemaps for model distribution, and line charts for trend analysis.
 
-UI/UX Design: Applied the "Bloom" deep-purple theme with transparent backgrounds for a modern, luxury brand aesthetic.
-
-Business Insight
-Analyzed color trends and regional demand to determine which models (Urus vs. Aventador) dominate specific global markets.
+## 📁 Files in this Folder
+* `Lamborghini Sale Analysis.pbix`: The interactive Power BI report file.
+* `dataset.csv`: The underlying sales data used for this analysis.

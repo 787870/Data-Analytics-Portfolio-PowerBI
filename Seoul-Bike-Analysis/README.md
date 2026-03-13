@@ -20,5 +20,6 @@ Using the Key Influencers AI model, I discovered the following:
 * **Screenshots/:** High-resolution captures of the dashboard insights.
 
 # 👤 Author
-**A. Mohammed Aslam** * Power BI Developer | Data Analyst  
+**A. Mohammed Aslam** 
+* Power BI Developer | Data Analyst  
 * GitHub: [github.com/787870](https://github.com/787870)

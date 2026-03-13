@@ -1,7 +1,7 @@
-📋 #Project Overview
+#📋 Project Overview
 This project was developed as part of the Microsoft Elevate AICTE Internship. The goal was to analyze urban mobility patterns and environmental factors to optimize bike-sharing supply in Seoul. By utilizing Power BI's built-in Machine Learning capabilities, I identified key drivers that fluctuate demand.
 
-🚀 Key Insights (AI-Driven)
+#🚀 Key Insights (AI-Driven)
 Using the Key Influencers AI model, I discovered the following:
 
 *Peak Hour Surge: Demand increases by an average of +605.1 units during commuter peak hours.

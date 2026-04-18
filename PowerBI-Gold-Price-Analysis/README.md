@@ -30,7 +30,8 @@ Focused on implementing advanced and rarely used visuals to enhance data storyte
 * **Line Chart (Trend Analysis):** Plots the raw chronological price alongside the calculated 12-Month Moving Average.
 
 ## 📸 Dashboard Preview
-*(Add a screenshot of your dashboard here. You can do this by dragging and dropping an image file directly into the GitHub editor!)*
+<img width="1918" height="843" alt="Screenshot 2026-04-18 111323" src="https://github.com/user-attachments/assets/01249f51-0c76-42a8-be9f-1df1a18210a0" />
+
 
 ## 🚀 How to Use
 1. Download the `Historical_Price_Assignment.pbix` file from this repository.

@@ -5,7 +5,7 @@ A collection of interactive data visualization projects and professional busines
 * **[Student Lead Generation Analysis](./STUDENT%20LEAD%20GENERATION%20ANALYSIS)**: Tracking lead sources and student demographics for enrollment insights.
 * **[Google Stock Analysis](./Google%20Analysis)**: Professional dashboard featuring KPI cards and market trend tracking.
 * **[Lamborghini Sale Analysis](./LAMBORGHINI%20SALE%20ANALYSIS)**: Detailed sales reporting and analytics.
-* ** [Historical Gold Price Analysis](./PowerBI-Gold-Price-Analysis)**: Advanced time-intelligence DAX and AI-driven visual analysis of 30-year market trends.
+* **[Historical Gold Price Analysis](./PowerBI-Gold-Price-Analysis)**: Advanced time-intelligence DAX and AI-driven visual analysis of 30-year market trends.
 * **[Seoul Bike Demand Analysis](./Seoul-Bike-Analysis)**: Interactive dashboard analyzing urban mobility patterns and ridership data.
 
 ## 🛠️ Tech Stack

@@ -7,6 +7,7 @@ A collection of interactive data visualization projects and professional busines
 * **[Lamborghini Sale Analysis](./LAMBORGHINI%20SALE%20ANALYSIS)**: Detailed sales reporting and analytics.
 * **[Historical Gold Price Analysis](./PowerBI-Gold-Price-Analysis)**: Advanced time-intelligence DAX and AI-driven visual analysis of 30-year market trends.
 * **[Seoul Bike Demand Analysis](./Seoul-Bike-Analysis)**: Interactive dashboard analyzing urban mobility patterns and ridership data.
+* **[Netflix Content Strategy Analysis](./Netflix): End-to-end interactive dashboard analyzing global content distribution, relational data models, and AI-driven insights.
 
 ## 🛠️ Tech Stack
 * **Tools**: Power BI Desktop, SQL Server.

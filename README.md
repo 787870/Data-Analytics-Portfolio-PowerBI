@@ -8,8 +8,8 @@ A collection of interactive data visualization projects and professional busines
 * **[Historical Gold Price Analysis](./PowerBI-Gold-Price-Analysis)**: Advanced time-intelligence DAX and AI-driven visual analysis of 30-year market trends.
 * **[Seoul Bike Demand Analysis](./Seoul-Bike-Analysis)**: Interactive dashboard analyzing urban mobility patterns and ridership data.
 * [Netflix Content Strategy Analysis](./Netflix): End-to-end interactive dashboard analyzing global content distribution, relational data models, and AI-driven insights.
+* **[**Telecom Customer Churn Analysis**](https://github.com/YourUsername/Telecom-Churn-Analysis-PowerBI): Advanced dashboard utilizing DAX, Row-Level Security (RLS), and Power Automate to track customer attrition and business risk.
 
-## 🛠️ Tech Stack
 * **Tools**: Power BI Desktop, SQL Server.
 * **Skills**: T-SQL, Data Modeling, DirectQuery, and DAX.
 

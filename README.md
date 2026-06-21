@@ -11,7 +11,7 @@ A collection of interactive data visualization projects and professional busines
 * [Telecom Customer Churn Analysis](https://github.com/787870/Data-Analytics-Portfolio-PowerBI/tree/main/Telecom-Churn-Analysis-PowerBI): Advanced dashboard utilizing DAX, Row-Level Security (RLS), and Power Automate to track customer attrition and business risk.
 
 ## 🛠️ Tech Stack
-* **Tools**: Power BI Desktop, SQL Server.
+* **Tools**: Power BI Desktop, SQL Server, Tabluea.
 * **Skills**: T-SQL, Data Modeling, DirectQuery, and DAX.
 
 ## 📧 Contact

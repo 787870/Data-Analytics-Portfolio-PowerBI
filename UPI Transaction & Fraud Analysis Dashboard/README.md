@@ -27,4 +27,3 @@ An end-to-end interactive Power BI dashboard developed to analyze transaction pa
 *   **Data Modeling & Star Schema Architecture**
 
 ---
-*Created as part of [Insert Program Name, e.g., Microsoft Elevate Program / Cognifyz IT Solutions]*

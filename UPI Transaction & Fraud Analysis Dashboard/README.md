@@ -25,5 +25,3 @@ An end-to-end interactive Power BI dashboard developed to analyze transaction pa
 *   **Power Query (M Language)**
 *   **DAX (Data Analysis Expressions)**
 *   **Data Modeling & Star Schema Architecture**
-
----

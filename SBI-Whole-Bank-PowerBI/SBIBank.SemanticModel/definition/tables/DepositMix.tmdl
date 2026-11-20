@@ -21,7 +21,6 @@ table DepositMix
 	partition DepositMix = m
 		mode: import
 		source =
-			```
 			let
 			    Source = #table(
 			        type table [Bucket = text, AmountCr = number],
@@ -33,4 +32,3 @@ table DepositMix
 			    )
 			in
 			    Source
-			```

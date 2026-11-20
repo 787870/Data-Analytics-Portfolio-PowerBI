@@ -1,16 +1,64 @@
 {
-  "name": "CY26SU02",
-  "dataColors": [
-    "#0B4FA8",
-    "#071A3A",
-    "#0E7A4B",
-    "#B4233A",
-    "#5C6B80",
-    "#8FB4E8",
-    "#1F4E79",
-    "#D5DEEA"
-  ],
-  "foreground": "#142033",
-  "background": "#FFFFFF",
-  "tableAccent": "#0B4FA8"
+    "name":  "CY26SU02",
+    "dataColors":  [
+                       "#00A9E0",
+                       "#003B71",
+                       "#F2B544",
+                       "#147D64",
+                       "#C44D58",
+                       "#8DB5C7",
+                       "#4C6A92",
+                       "#D9E2EC"
+                   ],
+    "firstLevelElements":  "#18324B",
+    "secondLevelElements":  "#60758A",
+    "thirdLevelElements":  "#DCE6EF",
+    "fourthLevelElements":  "#AFC2D2",
+    "background":  "#F3F7FA",
+    "secondaryBackground":  "#E7EFF5",
+    "foreground":  "#18324B",
+    "tableAccent":  "#00A9E0",
+    "textClasses":  {
+                        "callout":  {
+                                        "fontSize":  28,
+                                        "fontFace":  "Segoe UI Semibold",
+                                        "color":  "#123B5D"
+                                    },
+                        "title":  {
+                                      "fontSize":  12,
+                                      "fontFace":  "Segoe UI Semibold",
+                                      "color":  "#18324B"
+                                  },
+                        "largeTitle":  {
+                                           "fontSize":  16,
+                                           "fontFace":  "Segoe UI Semibold",
+                                           "color":  "#18324B"
+                                       },
+                        "label":  {
+                                      "fontSize":  10,
+                                      "fontFace":  "Segoe UI",
+                                      "color":  "#60758A"
+                                  },
+                        "lightLabel":  {
+                                           "fontSize":  10,
+                                           "fontFace":  "Segoe UI",
+                                           "color":  "#60758A"
+                                       },
+                        "header":  {
+                                       "fontSize":  12,
+                                       "fontFace":  "Segoe UI Semibold",
+                                       "color":  "#003B71"
+                                   }
+                    },
+    "visualStyles":  {
+                         "cardVisual":  {
+                                            "*":  {
+                                                      "labels":  [
+                                                                     {
+                                                                         "labelDisplayUnits":  1
+                                                                     }
+                                                                 ]
+                                                  }
+                                        }
+                     }
 }

@@ -1,38 +1,53 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
-  "name": "cardAdvancesFy26aa",
-  "position": {
-    "x": 636,
-    "y": 24,
-    "z": 2,
-    "height": 140,
-    "width": 290,
-    "tabOrder": 2
-  },
-  "visual": {
-    "visualType": "cardVisual",
-    "query": {
-      "queryState": {
-        "Data": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Annual"
-                    }
-                  },
-                  "Property": "Advances FY26"
-                }
-              },
-              "queryRef": "Annual.Advances FY26",
-              "nativeQueryRef": "Advances FY26"
-            }
-          ]
-        }
-      }
-    },
-    "drillFilterOtherVisuals": true
-  }
+    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+    "name":  "cardAdvancesFy26aa",
+    "position":  {
+                     "x":  640,
+                     "y":  104,
+                     "z":  2,
+                     "height":  142,
+                     "width":  288,
+                     "tabOrder":  2
+                 },
+    "visual":  {
+                   "visualType":  "cardVisual",
+                   "query":  {
+                                 "queryState":  {
+                                                    "Data":  {
+                                                                 "projections":  [
+                                                                                     {
+                                                                                         "field":  {
+                                                                                                       "Measure":  {
+                                                                                                                       "Expression":  {
+                                                                                                                                          "SourceRef":  {
+                                                                                                                                                            "Entity":  "Annual"
+                                                                                                                                                        }
+                                                                                                                                      },
+                                                                                                                       "Property":  "Advances FY26"
+                                                                                                                   }
+                                                                                                   },
+                                                                                         "queryRef":  "Annual.Advances FY26",
+                                                                                         "nativeQueryRef":  "Advances FY26"
+                                                                                     }
+                                                                                 ]
+                                                             }
+                                                }
+                             },
+                   "drillFilterOtherVisuals":  true,
+                   "objects":  {
+                                   "labels":  [
+                                                  {
+                                                      "properties":  {
+                                                                         "labelDisplayUnits":  {
+                                                                                                   "expr":  {
+                                                                                                                "Literal":  {
+                                                                                                                                "Value":  "1L"
+                                                                                                                            }
+                                                                                                            }
+                                                                                               }
+                                                                     }
+                                                  }
+                                              ]
+                               }
+               }
 }

@@ -95,7 +95,6 @@ table Annual
 	partition Annual = m
 		mode: import
 		source =
-			```
 			let
 			    Source = #table(
 			        type table [SortOrder = number, FiscalYear = text, DepositsCr = number, AdvancesCr = number, NIIcr = number, OperatingProfitCr = number, NetProfitCr = number, GNPA = number, NIM = number],
@@ -107,4 +106,3 @@ table Annual
 			    )
 			in
 			    Source
-			```

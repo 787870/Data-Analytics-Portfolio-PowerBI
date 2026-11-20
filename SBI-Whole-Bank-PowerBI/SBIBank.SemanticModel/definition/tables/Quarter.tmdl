@@ -1,0 +1,65 @@
+table Quarter
+	lineageTag: e552979d-7041-4acc-ba16-ea0af518e5be
+
+	column SortOrder
+		dataType: int64
+		lineageTag: 73bdc41c-7cd8-4451-b2c0-5f8377344f51
+		summarizeBy: none
+		sourceColumn: SortOrder
+		isHidden
+
+	column Period
+		dataType: string
+		lineageTag: fcfd2838-ce2e-45a9-acf9-c96ee79a33cc
+		summarizeBy: none
+		sourceColumn: Period
+		sortByColumn: SortOrder
+
+	column PatCr
+		dataType: double
+		lineageTag: e58f6a1e-8527-43a8-82f5-139683a3c883
+		summarizeBy: sum
+		sourceColumn: PatCr
+		formatString: "#,0"
+
+	column DepositsCr
+		dataType: double
+		lineageTag: c9adaa4f-b689-4357-b6e1-7ca688c9e2d7
+		summarizeBy: sum
+		sourceColumn: DepositsCr
+		formatString: "#,0"
+
+	column AdvancesCr
+		dataType: double
+		lineageTag: 57326301-048a-4d85-a4f1-a025a1e64733
+		summarizeBy: sum
+		sourceColumn: AdvancesCr
+		formatString: "#,0"
+
+	column GNPACr
+		dataType: double
+		lineageTag: 0e05060d-4d39-4fd2-b7c9-a5506b470b95
+		summarizeBy: sum
+		sourceColumn: GNPACr
+		formatString: "#,0"
+
+	measure 'Quarter PAT' = SUM ( Quarter[PatCr] )
+		formatString: "#,0"
+		displayFolder: Profit
+
+	partition Quarter = m
+		mode: import
+		source =
+			```
+			let
+			    Source = #table(
+			        type table [SortOrder = number, Period = text, PatCr = number, DepositsCr = number, AdvancesCr = number, GNPACr = number],
+			        {
+				        {1, "Q4 FY25", 18643, 5382190, 4220703, 76880},
+				        {2, "Q3 FY26", 21028, 5701309, 4683508, 73637},
+				        {3, "Q4 FY26", 19684, 5975642, 4932627, 73452}
+			        }
+			    )
+			in
+			    Source
+			```

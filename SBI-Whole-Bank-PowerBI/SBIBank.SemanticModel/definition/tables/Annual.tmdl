@@ -1,0 +1,110 @@
+table Annual
+	lineageTag: 7ed9dbad-8341-4a09-b1e1-d3f5ba82447f
+
+	column SortOrder
+		dataType: int64
+		lineageTag: 75c062af-1e23-4763-afd9-b227d449bd1c
+		summarizeBy: none
+		sourceColumn: SortOrder
+		isHidden
+
+	column FiscalYear
+		dataType: string
+		lineageTag: 11844b87-e880-4c86-9d69-5da1cc32c4a1
+		summarizeBy: none
+		sourceColumn: FiscalYear
+		sortByColumn: SortOrder
+
+	column DepositsCr
+		dataType: double
+		lineageTag: 39b73859-5ae4-4347-a3a0-803374f8ab85
+		summarizeBy: sum
+		sourceColumn: DepositsCr
+		formatString: "#,0"
+
+	column AdvancesCr
+		dataType: double
+		lineageTag: fddc320c-8f7d-4483-962d-d9007389af47
+		summarizeBy: sum
+		sourceColumn: AdvancesCr
+		formatString: "#,0"
+
+	column NIIcr
+		dataType: double
+		lineageTag: d0d96494-392f-4b96-a967-fcfe0452d9ab
+		summarizeBy: sum
+		sourceColumn: NIIcr
+		formatString: "#,0"
+
+	column OperatingProfitCr
+		dataType: double
+		lineageTag: 6089adb5-0ab8-44b3-91f9-96906e9c073f
+		summarizeBy: sum
+		sourceColumn: OperatingProfitCr
+		formatString: "#,0"
+
+	column NetProfitCr
+		dataType: double
+		lineageTag: bf081465-d638-4a36-8ce2-cad388e52e55
+		summarizeBy: sum
+		sourceColumn: NetProfitCr
+		formatString: "#,0"
+
+	column GNPA
+		dataType: double
+		lineageTag: bb02af53-fb8a-467d-ae33-3fc96d06b1f1
+		summarizeBy: none
+		sourceColumn: GNPA
+		formatString: "0.00%"
+
+	column NIM
+		dataType: double
+		lineageTag: 2fd4554f-67fe-47a7-a182-3655f0d4af7e
+		summarizeBy: none
+		sourceColumn: NIM
+		formatString: "0.00%"
+
+	measure 'Net Profit' = SUM ( Annual[NetProfitCr] )
+		formatString: "#,0"
+		displayFolder: Profit
+
+	measure 'Deposits' = SUM ( Annual[DepositsCr] )
+		formatString: "#,0"
+		displayFolder: Balance sheet
+
+	measure 'Advances' = SUM ( Annual[AdvancesCr] )
+		formatString: "#,0"
+		displayFolder: Balance sheet
+
+	measure 'Net Profit FY26' = CALCULATE ( SUM ( Annual[NetProfitCr] ), Annual[FiscalYear] = "FY26" )
+		formatString: "#,0"
+		displayFolder: FY26 cards
+
+	measure 'Deposits FY26' = CALCULATE ( SUM ( Annual[DepositsCr] ), Annual[FiscalYear] = "FY26" )
+		formatString: "#,0"
+		displayFolder: FY26 cards
+
+	measure 'Advances FY26' = CALCULATE ( SUM ( Annual[AdvancesCr] ), Annual[FiscalYear] = "FY26" )
+		formatString: "#,0"
+		displayFolder: FY26 cards
+
+	measure 'GNPA Ratio FY26' = CALCULATE ( SUM ( Annual[GNPA] ), Annual[FiscalYear] = "FY26" )
+		formatString: "0.00%"
+		displayFolder: FY26 cards
+
+	partition Annual = m
+		mode: import
+		source =
+			```
+			let
+			    Source = #table(
+			        type table [SortOrder = number, FiscalYear = text, DepositsCr = number, AdvancesCr = number, NIIcr = number, OperatingProfitCr = number, NetProfitCr = number, GNPA = number, NIM = number],
+			        {
+				        {1, "FY24", 4916077, 3767535, 159876, 93797, 61077, 0.022400000000000003, 0.032799999999999996},
+				        {2, "FY25", 5382190, 4220703, 166340, 110579, 70901, 0.0182, 0.0308},
+				        {3, "FY26", 5975642, 4932627, 173120, 123015, 80032, 0.0149, 0.0291}
+			        }
+			    )
+			in
+			    Source
+			```

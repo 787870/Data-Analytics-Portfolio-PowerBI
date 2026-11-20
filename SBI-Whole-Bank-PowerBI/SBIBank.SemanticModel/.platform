@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "SBI Bank"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a91c4e22-1b70-4d55-8f66-91ab23cd4501"
+  }
+}

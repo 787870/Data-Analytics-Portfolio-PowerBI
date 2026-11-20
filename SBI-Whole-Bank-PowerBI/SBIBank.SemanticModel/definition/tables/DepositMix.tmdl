@@ -1,0 +1,36 @@
+table DepositMix
+	lineageTag: 23711e38-d341-4808-9b24-967163dc492e
+
+	column Bucket
+		dataType: string
+		lineageTag: f3f12d48-83c0-4d89-a444-288b74baec3f
+		summarizeBy: none
+		sourceColumn: Bucket
+
+	column AmountCr
+		dataType: double
+		lineageTag: f479a491-eb89-40b7-8d5e-1a54a240597a
+		summarizeBy: sum
+		sourceColumn: AmountCr
+		formatString: "#,0"
+
+	measure 'Mix Amount' = SUM ( DepositMix[AmountCr] )
+		formatString: "#,0"
+		displayFolder: Balance sheet
+
+	partition DepositMix = m
+		mode: import
+		source =
+			```
+			let
+			    Source = #table(
+			        type table [Bucket = text, AmountCr = number],
+			        {
+				        {"Domestic CASA", 2262011},
+				        {"Domestic term", 3470949},
+				        {"Foreign and other", 242682}
+			        }
+			    )
+			in
+			    Source
+			```

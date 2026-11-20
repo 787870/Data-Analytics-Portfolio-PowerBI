@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "cardGnpaRatioFy26",
+  "position": {
+    "x": 942,
+    "y": 24,
+    "z": 3,
+    "height": 140,
+    "width": 290,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Annual"
+                    }
+                  },
+                  "Property": "GNPA Ratio FY26"
+                }
+              },
+              "queryRef": "Annual.GNPA Ratio FY26",
+              "nativeQueryRef": "GNPA Ratio FY26"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
